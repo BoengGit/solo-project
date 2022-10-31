@@ -247,7 +247,7 @@
                     <div class="col-md-6  ">
                         <div class="box ">
                             <div class="img-box">
-                                <img src="images/o1.jpg" alt="">
+                                <img src="{{ asset('frontend/images/o1.jpg') }}" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -322,7 +322,7 @@
                     <div class="col-md-6  ">
                         <div class="box ">
                             <div class="img-box">
-                                <img src="images/o2.jpg" alt="">
+                                <img src="{{ asset('frontend/images/o2.jpg') }}" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -425,7 +425,7 @@
                         <div class="box">
                             <div>
                                 <div class="img-box">
-                                    <img src="images/f1.png" alt="">
+                                    <img src="{{ asset('frontend/images/f1.png') }}" alt="">
                                 </div>
                                 <div class="detail-box">
                                     <h5>
@@ -509,7 +509,7 @@
                         <div class="box">
                             <div>
                                 <div class="img-box">
-                                    <img src="images/f2.png" alt="">
+                                    <img src="{{ asset('frontend/images/f2.png') }}" alt="">
                                 </div>
                                 <div class="detail-box">
                                     <h5>
@@ -593,7 +593,7 @@
                         <div class="box">
                             <div>
                                 <div class="img-box">
-                                    <img src="images/f3.png" alt="">
+                                    <img src="{{ asset('frontend/images/f3.png') }}" alt="">
                                 </div>
                                 <div class="detail-box">
                                     <h5>
@@ -677,7 +677,7 @@
                         <div class="box">
                             <div>
                                 <div class="img-box">
-                                    <img src="images/f4.png" alt="">
+                                    <img src="{{ asset('frontend/images/f4.png') }}" alt="">
                                 </div>
                                 <div class="detail-box">
                                     <h5>
@@ -761,7 +761,7 @@
                         <div class="box">
                             <div>
                                 <div class="img-box">
-                                    <img src="images/f5.png" alt="">
+                                    <img src="{{ asset('frontend/images/f5.png') }}" alt="">
                                 </div>
                                 <div class="detail-box">
                                     <h5>
@@ -845,7 +845,7 @@
                         <div class="box">
                             <div>
                                 <div class="img-box">
-                                    <img src="images/f6.png" alt="">
+                                    <img src="{{ asset('frontend/images/f6.png') }}" alt="">
                                 </div>
                                 <div class="detail-box">
                                     <h5>
@@ -929,7 +929,7 @@
                         <div class="box">
                             <div>
                                 <div class="img-box">
-                                    <img src="images/f7.png" alt="">
+                                    <img src="{{ asset('frontend/images/f7.png') }}" alt="">
                                 </div>
                                 <div class="detail-box">
                                     <h5>
@@ -1013,7 +1013,7 @@
                         <div class="box">
                             <div>
                                 <div class="img-box">
-                                    <img src="images/f8.png" alt="">
+                                    <img src="{{ asset('frontend/images/f8.png') }}" alt="">
                                 </div>
                                 <div class="detail-box">
                                     <h5>
@@ -1097,7 +1097,7 @@
                         <div class="box">
                             <div>
                                 <div class="img-box">
-                                    <img src="images/f9.png" alt="">
+                                    <img src="{{ asset('frontend/images/f9.png') }}" alt="">
                                 </div>
                                 <div class="detail-box">
                                     <h5>
@@ -1197,7 +1197,7 @@
             <div class="row">
                 <div class="col-md-6 ">
                     <div class="img-box">
-                        <img src="images/about-img.png" alt="">
+                        <img src="{{ asset('frontend/images/about-img.png') }}" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -1314,7 +1314,7 @@
                                 </p>
                             </div>
                             <div class="img-box">
-                                <img src="images/client1.jpg" alt="" class="box-img">
+                                <img src="{{ asset('frontend/images/client1.jpg') }}" alt="" class="box-img">
                             </div>
                         </div>
                     </div>
@@ -1333,7 +1333,7 @@
                                 </p>
                             </div>
                             <div class="img-box">
-                                <img src="images/client2.jpg" alt="" class="box-img">
+                                <img src="{{ asset('frontend/images/client2.jpg') }}" alt="" class="box-img">
                             </div>
                         </div>
                     </div>
