@@ -24,6 +24,8 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
+// Admin Controller
 Route::controller(AdminController::class)->group(function(){
     Route::get('/admin/logout', 'destroy')->name('admin.logout')->middleware(['auth', 'verified']);
-});
+    Route::get('/admin/profile', 'profile')->name('admin.profile')->middleware(['auth', 'verified']);
+}); //End Method
