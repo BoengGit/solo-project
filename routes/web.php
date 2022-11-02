@@ -30,4 +30,5 @@ Route::controller(AdminController::class)->group(function(){
     Route::get('/admin/profile', 'Profile')->name('admin.profile')->middleware(['auth', 'verified']);
     Route::get('/admin/profile/edit', 'EditProfile')->name('edit.profile')->middleware(['auth', 'verified']);
     Route::post('/admin/profile/store', 'StoreProfile')->name('store.profile')->middleware(['auth', 'verified']);
+    Route::get('/admin/password', 'ChangePassword')->name('change.password')->middleware(['auth', 'verified']);
 }); //End Method
