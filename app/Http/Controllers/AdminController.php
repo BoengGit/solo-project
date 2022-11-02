@@ -19,10 +19,41 @@ class AdminController extends Controller
         return redirect('/');
     }
 
-    public function profile()
+    public function Profile()
     {
         $id = Auth::user()->id;
         $admindata = User::find($id);
         return view('admin.admin_profile_view', compact('admindata'));
     }
+
+    public function EditProfile()
+    {
+        $id = Auth::user()->id;
+        $editData = User::find($id);
+        return view('admin.admin_profile_edit', compact('editData'));
+    } //end method
+
+    public function StoreProfile(Request $request)
+    {
+        $id = Auth::user()->id;
+        $data = User::find($id);
+        $data->name = $request->name;
+        $data->email = $request->email;
+
+        if ($request->file('profile_image')) {
+            $file = $request->file('profile_image');
+
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('upload/admin_images'), $filename);
+            $data['profile_image'] = $filename;
+        }
+        $data->save();
+
+        $notification = array(
+            'message' => 'Profil Admin Berhasil di Ganti',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->route('admin.profile')->with($notification);
+    }// End Method
 }

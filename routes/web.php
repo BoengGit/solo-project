@@ -27,6 +27,7 @@ require __DIR__.'/auth.php';
 // Admin Controller
 Route::controller(AdminController::class)->group(function(){
     Route::get('/admin/logout', 'destroy')->name('admin.logout')->middleware(['auth', 'verified']);
-    Route::get('/admin/profile', 'profile')->name('admin.profile')->middleware(['auth', 'verified']);
-    Route::get('/admin/profile/edit', 'editProfile')->name('edit.profile')->middleware(['auth', 'verified']);
+    Route::get('/admin/profile', 'Profile')->name('admin.profile')->middleware(['auth', 'verified']);
+    Route::get('/admin/profile/edit', 'EditProfile')->name('edit.profile')->middleware(['auth', 'verified']);
+    Route::post('/admin/profile/store', 'StoreProfile')->name('store.profile')->middleware(['auth', 'verified']);
 }); //End Method
